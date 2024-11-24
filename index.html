@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume & Portfolio</title>
+    <link rel="icon" href="images/logo.png"  type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <header>
+        <nav class="desktop-nav">
+            <div class="logo">
+               <img src="./images/logo.png" alt="logo">
+                <span>Seif Amro</span>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+            <!-- Hamburger Icon -->
+    
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <ul>
+                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span id="typewriter"></span></h1>
+            <p>A Passionate Web Developer Crafting Unique Experiences</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                4 years as a software developer seeks for joining teams as a Software developer providing Software solution which meets costumer needs in addition to ability to take a new development challenges and new technologies and tools Moreover Have the ability to work with teams and groups which translate UI/UX design wireframes to well designed, reusable, and clean code.
+            </p>
+            <div class="button-group">
+                <a href="https://github.com/your-github-profile" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> Visit GitHub
+                </a>
+                <a href="resume.pdf" download class="btn">
+                    <i class="fas fa-file-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="images/html-logo.svg" alt="HTML Logo">
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <img src="images/css-logo.svg" alt="CSS Logo">
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <img src="images/js-logo.svg" alt="JavaScript Logo">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <img src="images/react-logo.svg" alt="React Logo">
+                    <span>React</span>
+                </div>
+                <div class="skill">
+                    <img src="images/vue-logo.svg" alt="Vue.js Logo">
+                    <span>VueJs</span>
+                </div>
+                <div class="skill">
+                    <img src="images/nuxt-logo.svg" alt="Nuxt.js Logo">
+                    <span>Nuxt</span>
+                </div>
+                <div class="skill">
+                    <img src="images/laravel-logo.svg" alt="Laravel Logo">
+                    <span>Laravel</span>
+                </div>
+                <div class="skill">
+                    <img src="images/php-logo.svg" alt="PHP Logo">
+                    <span>PHP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Task Manager</h3>
+                    <p>A complete task management system to organize tasks efficiently.</p>
+                </div>
+                <div class="project">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Portfolio Website</h3>
+                    <p>An interactive portfolio showcasing my work and skills.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            <!-- </div>
+        </div>
+    </section> --> 
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input id="name" type="text" placeholder="Your Name" required>
+                <input id="email" type="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Seif | All Rights Reserved</p>
+    </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
