@@ -55,6 +55,7 @@ menuItems.forEach(item => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('test load');
     const text = "Seif Amr";
     const typewriter = document.getElementById('typewriter');
     let index = 0;
