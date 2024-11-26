@@ -1,38 +1,4 @@
 
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    const templateParams = {
-        name: name,
-        email: email,
-        message: message,
-       
-    };
-
- 
-                showModal('Message sent successfully!');
-                 document.getElementById('name').value='';
-               document.getElementById('email').value='';
-                document.getElementById('message').value='';
-        
-          
-        
-});
-
-function showModal(message) {
-    const modal = document.getElementById('message-modal');
-    const modalMessage = document.getElementById('modal-message');
-    modalMessage.textContent = message;
-    modal.classList.add('show');
-
-    setTimeout(() => {
-        modal.classList.remove('show');
-    }, 3000);
-}
 
 const hamburgerIcon = document.getElementById("hamburger-icon");
 const mobileMenu = document.getElementById("mobile-menu");
@@ -69,4 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     typeEffect();
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });

@@ -258,13 +258,54 @@ section#skills {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
-.project img {
-    width: 100%;
+
+.project {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
     border-radius: 8px;
-    
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
+.project-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+}
+
 .project h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.project p {
     margin: 10px 0;
+    font-size: 16px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.project .btn {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    background: #e6007e;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.project .btn:hover {
+    background: #c00065;
 }
 
 /* Contact Section */
@@ -372,7 +413,53 @@ footer {
         display: none;
     }
 
+
+
+    
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+   
+    
   
+    
+    .info-card {
+        background: #fff;
+        color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        margin-top: 35px;
+    }
+    
+    .info-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .info-label {
+        font-weight: bold;
+        color: #11264a;
+    }
+    
+    .info-value {
+        color: #555;
+        font-size: 1.1em;
+    }
+    
+    .info-link {
+        color: #e6007e;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .info-link:hover {
+        text-decoration: underline;
+    }
 
 
 
@@ -526,5 +613,9 @@ footer {
 
     #contact > .container {
         width: 100%;
+    }
+
+   #contact > .container > h2{
+         font-size: 2rem;
     }
 }
