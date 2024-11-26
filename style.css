@@ -253,10 +253,14 @@ section#skills {
 }
 
 /* Projects Section */
+section#projects {
+    min-height: 100vh;
+}
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: auto auto;
     gap: 20px;
+    margin-top: 70px;
 }
 
 .project {
@@ -311,24 +315,14 @@ section#skills {
 /* Contact Section */
 section#contact {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 25px;
+#contact > .container {
+    max-width: 1200px;
+    width: 100%;
 }
-
-input, textarea, button {
-    
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 button {
     background: #e6007e;
     color: #fff;
@@ -357,40 +351,7 @@ footer {
     margin-left: 1.25rem;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.show{
-    display: block;
-}
+
 
 @keyframes typing {
     from {
@@ -416,10 +377,7 @@ footer {
 
 
     
-    .container {
-        max-width: 600px;
-        margin: 0 auto;
-    }
+  
 
    
     
@@ -464,6 +422,14 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(100deg,  #1b1b2f,#11264a,#e6007e);
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease infinite;
+        color: #fff;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
     section:nth-child(1){
         padding: 0px 80px;
     }
@@ -609,6 +575,19 @@ footer {
         font-size: 1rem;
         font-weight: bold;
         color: #fff;
+    }
+
+
+   
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        margin-top: 70px;
+        overflow-y: scroll;
+        max-height: 100vh;
+      overflow-y: scroll;
     }
 
     #contact > .container {
