@@ -14,6 +14,6 @@ A sleek, responsive resume and portfolio website designed to showcase skills, pr
 ---
 
 ## 🚀 Demo  
-👉 https://github.com/seif1125/Seif-Amro-Portfolio
+👉 https://github.io/seif1125/Seif-Amro-Portfolio
 
 ---
