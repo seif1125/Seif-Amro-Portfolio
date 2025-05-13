@@ -1,10 +1,13 @@
 {
   "name": "seif-amro-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "A sleek, responsive resume and portfolio website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "npm install",
+    "build": "echo 'No build step needed for static site'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/seif1125/Seif-Amro-Portfolio/issues"
   },
-  "homepage": "https://github.com/seif1125/Seif-Amro-Portfolio#readme"
+  "homepage": "https://seif1125.github.io/Seif-Amro-Portfolio",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }
