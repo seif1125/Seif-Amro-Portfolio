@@ -48,6 +48,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 2rem;
 }
 
 .logo> img{
@@ -254,7 +255,7 @@ section#skills {
 
 /* Projects Section */
 section#projects {
-    min-height: 100vh;
+    min-height: 175vh;
 }
 .projects-grid {
     display: grid;
