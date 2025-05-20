@@ -255,8 +255,9 @@ section#skills {
 
 /* Projects Section */
 section#projects {
-    min-height: 175vh;
+   height: auto !important
 }
+
 .projects-grid {
     display: grid;
     grid-template-columns: auto auto;
